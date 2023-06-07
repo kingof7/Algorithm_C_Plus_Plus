@@ -1,0 +1,5 @@
+# .gitignore bak
+.gitignore.bak
+
+# application
+*.exe
