@@ -1,4 +1,4 @@
-// ÁßÃ¸for·Î Çª´Â Á¶ÇÕ
+// ÁßÃ¸ for·Î Çª´Â Á¶ÇÕ
 #include<bits/stdc++.h>
 using namespace std;
 
