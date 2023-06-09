@@ -27,8 +27,11 @@ int main() {
 	for(int i = 1; i <= 3; i++) v.push_back(i);
 	makePermutation(3, 3, 0);
 	
-	/* C++ 내장함수 (next_permutation 활용 풀이) 
+	/* C++ 내장함수 (next_permutation 활용 풀이)
+	vector<int> v = {1, 2, 3};
+	sort(v.begin(), v.end()); // 오름차순 정렬
 	do {
+	    for(int i : v) cout << i << " ";
 	}while(next_permutation(v.begin(), v.end()))
 	*/
 	return 0;
