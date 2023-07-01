@@ -1,10 +1,10 @@
-// ¼ø¿­ Àç±ÍÀûÀ¸·Î Ç®ÀÌ
+// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ç®ï¿½ï¿½
 #include<bits/stdc++.h>
 using namespace std;
 vector<int> v; 
 void printV(vector<int> &v) {
 	for(int i = 0; i < v.size(); i++) {
-		cout << v[i] < " ";
+		cout << v[i] << " ";
 	}
 	cout << "\n";
 } 
@@ -17,19 +17,19 @@ void makePermutation(int n, int r, int depth) {
 	}
 	for(int i = depth; i < n; i++) {
 		swap(v[i], v[depth]);
-		makePermutation(n, r, depth + 1); // depth´Â Àç±Í±íÀÌ 
+		makePermutation(n, r, depth + 1); // depthï¿½ï¿½ ï¿½ï¿½Í±ï¿½ï¿½ï¿½ 
 		swap(v[i], v[depth]);
 	}
 	return;
 }
 int main() {
-	/* Àç±ÍÀûÀ¸·Î Ç®ÀÌ */
+	/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ç®ï¿½ï¿½ */
 	for(int i = 1; i <= 3; i++) v.push_back(i);
 	makePermutation(3, 3, 0);
 	
-	/* C++ ³»ÀåÇÔ¼ö (next_permutation È°¿ë Ç®ÀÌ)
+	/* C++ ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ (next_permutation È°ï¿½ï¿½ Ç®ï¿½ï¿½)
 	vector<int> v = {1, 2, 3};
-	sort(v.begin(), v.end()); // ¿À¸§Â÷¼ø Á¤·Ä
+	sort(v.begin(), v.end()); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	do {
 	    for(int i : v) cout << i << " ";
 	}while(next_permutation(v.begin(), v.end()))
